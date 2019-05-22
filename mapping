@@ -1,0 +1,545 @@
+PUT moderation
+{
+    "mappings": {
+      "_doc": {
+        "properties": {
+          "checkedOutUser": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "contentType": {
+            "type": "keyword"
+          },
+          "date": {
+            "properties": {
+              "$date": {
+                "type": "long"
+              }
+            }
+          },
+          "enrichmentDate": {
+            "properties": {
+              "$date": {
+                "type": "long"
+              }
+            }
+          },
+          "isReviewed": {
+            "type": "boolean"
+          },
+          "metadata": {
+            "properties": {
+              "alarmingTokensFlag": {
+                "type": "boolean"
+              },
+              "cancellationThreatFlag": {
+                "type": "boolean"
+              },
+              "category": {
+                "type": "keyword"
+              },
+              "channel": {
+                "type": "keyword"
+              },
+              "companyName": {
+                "type": "text"
+              },
+              "dealData": {
+                "properties": {
+                  "announcement": {
+                    "type": "text"
+                  },
+                  "announcementText": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "averageRating": {
+                    "type": "text"
+                  },
+                  "breadCrumbs": {
+                    "type": "text"
+                  },
+                  "dealId": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "dealTitle": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "dealUrl": {
+                    "type": "text"
+                  },
+                  "dealid": {
+                    "type": "text"
+                  },
+                  "deliveryId": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "finePrint": {
+                    "type": "text"
+                  },
+                  "highlights": {
+                    "type": "text"
+                  },
+                  "merchant": {
+                    "type": "text"
+                  },
+                  "misaligned": {
+                    "type": "boolean"
+                  },
+                  "offensiveImage": {
+                    "type": "boolean"
+                  },
+                  "offensiveLanguage": {
+                    "type": "boolean"
+                  },
+                  "productDetails": {
+                    "type": "text"
+                  },
+                  "ratingDistribution": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "ratingsDistribution": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "shortAnnouncement": {
+                    "type": "text"
+                  },
+                  "shortAnnouncementText": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "tags": {
+                    "type": "text"
+                  },
+                  "title": {
+                    "type": "text"
+                  },
+                  "variations": {
+                    "type": "text"
+                  }
+                }
+              },
+              "dealId": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "deliveryId": {
+                "type": "text",
+                "fields": {
+                  "keyword": {
+                    "type": "keyword",
+                    "ignore_above": 256
+                  }
+                }
+              },
+              "division": {
+                "type": "keyword"
+              },
+              "escalationFlag": {
+                "type": "boolean"
+              },
+              "exclaimQuestionFlag": {
+                "type": "boolean"
+              },
+              "intensifierTokensFlag": {
+                "type": "boolean"
+              },
+              "legalThreatFlag": {
+                "type": "boolean"
+              },
+              "merchantName": {
+                "type": "text"
+              },
+              "negativeTokensFlag": {
+                "type": "boolean"
+              },
+              "offensiveTokensFlag": {
+                "type": "boolean"
+              },
+              "parentCategory": {
+                "type": "text"
+              },
+              "ratingStars": {
+                "type": "keyword"
+              },
+              "reviewDate": {
+                "type": "text"
+              },
+              "reviewId": {
+                "type": "text"
+              },
+              "reviewText": {
+                "type": "text"
+              },
+              "reviewer": {
+                "type": "text"
+              },
+              "socialMediaFlag": {
+                "type": "boolean"
+              },
+              "uppercaseFlag": {
+                "type": "boolean"
+              }
+            }
+          },
+          "reviewInfo": {
+            "properties": {
+              "lastActionAt": {
+                "type": "object"
+              },
+              "marked": {
+                "type": "keyword"
+              },
+              "markedSubsections": {
+                "type": "text"
+              },
+              "predicted": {
+                "type": "keyword"
+              },
+              "predictedSubsections": {
+                "type": "text"
+              },
+              "reviewStatus": {
+                "type": "keyword"
+              },
+              "reviewedSubsections": {
+                "type": "text"
+              }
+            }
+          },
+          "sections": {
+            "type": "nested",
+            "properties": {
+              "_id": {
+                "properties": {
+                  "$oid": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  }
+                }
+              },
+              "name": {
+                "type": "keyword"
+              },
+              "sectionType": {
+                "type": "keyword"
+              },
+              "subsections": {
+                "type": "nested",
+                "properties": {
+                  "_id": {
+                    "properties": {
+                      "$oid": {
+                        "type": "text",
+                        "fields": {
+                          "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "authorRole": {
+                    "type": "keyword"
+                  },
+                  "content": {
+                    "type": "text"
+                  },
+                  "escalationInfo": {
+                    "type": "object"
+                  },
+                  "flags": {
+                    "properties": {
+                      "marked": {
+                        "type": "nested",
+                        "properties": {
+                          "comment": {
+                            "type": "keyword"
+                          },
+                          "flagType": {
+                            "type": "keyword"
+                          },
+                          "reason": {
+                            "type": "keyword"
+                          },
+                          "reasonType": {
+                            "type": "keyword"
+                          }
+                        }
+                      },
+                      "predicted": {
+                        "type": "keyword"
+                      },
+                      "types": {
+                        "type": "keyword"
+                      }
+                    }
+                  },
+                  "highlightWords": {
+                    "type": "keyword"
+                  },
+                  "highlightsAgent": {
+                    "type": "keyword"
+                  },
+                  "highlightsCustomer": {
+                    "type": "keyword"
+                  },
+                  "imageId": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "isReviewed": {
+                    "type": "boolean"
+                  },
+                  "lastAction": {
+                    "type": "keyword"
+                  },
+                  "metadata": {
+                    "properties": {
+                      "alarmingTokensFlag": {
+                        "type": "boolean"
+                      },
+                      "cancellationThreatFlag": {
+                        "type": "boolean"
+                      },
+                      "category": {
+                        "type": "keyword"
+                      },
+                      "channel": {
+                        "type": "keyword"
+                      },
+                      "companyName": {
+                        "type": "keyword"
+                      },
+                      "dealData": {
+                        "properties": {
+                          "announcement": {
+                            "type": "text"
+                          },
+                          "averageRating": {
+                            "type": "text"
+                          },
+                          "breadCrumbs": {
+                            "type": "text"
+                          },
+                          "dealId": {
+                            "type": "text",
+                            "fields": {
+                              "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                              }
+                            }
+                          },
+                          "dealUrl": {
+                            "type": "text"
+                          },
+                          "dealid": {
+                            "type": "text"
+                          },
+                          "finePrint": {
+                            "type": "text"
+                          },
+                          "highlights": {
+                            "type": "text"
+                          },
+                          "merchant": {
+                            "type": "text"
+                          },
+                          "misaligned": {
+                            "type": "boolean"
+                          },
+                          "offensiveImage": {
+                            "type": "boolean"
+                          },
+                          "offensiveLanguage": {
+                            "type": "boolean"
+                          },
+                          "productDetails": {
+                            "type": "text"
+                          },
+                          "ratingDistribution": {
+                            "type": "text",
+                            "fields": {
+                              "keyword": {
+                                "type": "keyword",
+                                "ignore_above": 256
+                              }
+                            }
+                          },
+                          "shortAnnouncement": {
+                            "type": "text"
+                          },
+                          "tags": {
+                            "type": "text"
+                          },
+                          "title": {
+                            "type": "text"
+                          },
+                          "variations": {
+                            "type": "text"
+                          }
+                        }
+                      },
+                      "division": {
+                        "type": "keyword"
+                      },
+                      "escalationFlag": {
+                        "type": "boolean"
+                      },
+                      "exclaimQuestionFlag": {
+                        "type": "boolean"
+                      },
+                      "intensifierTokensFlag": {
+                        "type": "boolean"
+                      },
+                      "legalThreatFlag": {
+                        "type": "boolean"
+                      },
+                      "merchantName": {
+                        "type": "keyword"
+                      },
+                      "negativeTokensFlag": {
+                        "type": "boolean"
+                      },
+                      "offensiveTokensFlag": {
+                        "type": "boolean"
+                      },
+                      "parentCategory": {
+                        "type": "keyword"
+                      },
+                      "socialMediaFlag": {
+                        "type": "boolean"
+                      },
+                      "tags": {
+                        "type": "keyword"
+                      },
+                      "uppercaseFlag": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "mismatchedBreadcrumbs": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "ratingStars": {
+                    "type": "keyword"
+                  },
+                  "reviewDate": {
+                    "properties": {
+                      "$date": {
+                        "type": "long"
+                      }
+                    }
+                  },
+                  "reviewId": {
+                    "type": "text",
+                    "fields": {
+                      "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                      }
+                    }
+                  },
+                  "reviewText": {
+                    "type": "text"
+                  },
+                  "reviewer": {
+                    "type": "text"
+                  },
+                  "subsectionType": {
+                    "type": "keyword"
+                  }
+                }
+              }
+            }
+          },
+          "sourceId": {
+            "type": "keyword"
+          },
+          "subsectionCount": {
+            "type": "integer"
+          },
+          "tabsProjectId": {
+            "type": "text",
+            "fields": {
+              "keyword": {
+                "type": "keyword",
+                "ignore_above": 256
+              }
+            }
+          },
+          "title": {
+            "type": "text"
+          }
+        }
+      }
+    }
+}
