@@ -151,9 +151,11 @@ POST /moderation/_doc
             "predicted": [],
             "marked": [
               {
-                "reasonType": "Disagree"
+                "reasonType": "Disagree",
+                "reason": "Foreign language"
               },
               {
+                "reasonType": "Agree",
                 "reason": "Foreign language"
               }
             ]
