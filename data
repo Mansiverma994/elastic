@@ -1,0 +1,465 @@
+POST /moderation/_doc
+{
+  "contentType": "conversation",
+  "title": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large",
+  "sourceId": "0353a042-1cd5-4549-81fb-5b9599b8e5c7",
+  "tabsProjectId": "1",
+  "subsectionCount": 11,
+  "reviewInfo": {
+    "reviewStatus": "",
+    "markedSubsections": [],
+    "lastActionAt": {
+      "date": null
+    },
+    "reviewedSubsections": [],
+    "marked": [],
+    "predicted": [
+      "FLAG_OFFENSIVE_CONTENT"
+    ],
+    "predictedSubsections": [
+      "5cc0dd311d8675979afe5717",
+      "5cc0dd311d8675979afe5718"
+    ]
+  },
+  "isCheckedOut": null,
+  "date": {
+    "$date": 1556129009998
+  },
+  "isReviewed": false,
+  "sections": [
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5719"
+      },
+      "name": "Images",
+      "sectionType": "image",
+      "subsections": [
+        {
+          "subsectionType": "image",
+          "imageId": "69837df525b60911d76e85f214a6fea0fc5fdc07",
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [
+              "FLAG_OFFENSIVE_CONTENT"
+            ],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Disagree",
+                "reason": "Foreign language"
+              },
+              {
+                "reasonType": "Agree",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Agree",
+                "reason": "Foreign language"
+              }
+            ]
+          },
+          "isReviewed": true,
+          "lastAction": "",
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5717"
+          }
+        },
+        {
+          "subsectionType": "image",
+          "imageId": "2847922ca90302c910a54e292a55a43916588b1f",
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [
+              "FLAG_OFFENSIVE_CONTENT"
+            ],
+            "marked": [
+              {
+                "reasonType": "Unsure",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Agree",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Agree",
+                "reason": "Foreign language"
+              }
+            ]
+          },
+          "isReviewed": true,
+          "lastAction": "",
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5718"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe571c"
+      },
+      "name": "Deal Title and Categories",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "mismatchedBreadcrumbs": "",
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe571a"
+          }
+        },
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "content": "Goods>Pet Supplies>Dog Supplies>Dog Apparel",
+          "flags": {
+            "types": [
+              "FLAG_MISALIGNED"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree"
+              },
+              {
+                "reason": "Foreign language"
+              }
+            ]
+          },
+          "isReviewed": false,
+          "lastAction": "",
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe571b"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe571d"
+      },
+      "name": "Deal Description",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": """
+Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large
+We have created an exciting line of dog fashion that is fun and modern with the certainties of comfort, luxury and affordability. We assure you the best in style, design, and quality. We hope you have as much fun and excitement with us as we have.Features. Kaelyn Party Dress. Sweet party dress with rhinestones applique, bow on satin waistband, lace trimming, and crystal buckle. Layered lace skirt. Cloth hook and eye closures at neck opening. 50% Cotton, 50% PolyesterSpecifications. Color: Pink. Size: Large
+
+
+
+
+
+Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large
+
+      Sizing Chart: Custom
+      Dimensions: 1.0 inches (H) x 1.0 inches (W) x 1.0 inches (L)
+      Weight: 6.0 pounds
+  
+
+
+      Made in China
+""",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Unsure",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe571e"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe571f"
+      },
+      "name": "Fine Print",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "This item is sold through the OSP operated by OSP Holdings, Inc..The merchant is solely responsible to purchasers for the fulfillment, delivery, care, quality, and pricing information of the advertised goods and services.The product is new.Product eligible for free returns within 14 days.Offer is not eligible for promo codes, but is eligible for Groupon Bucks. Shipping and handling charges will be Free. United States (excluding Alaska & Hawaii) Shipments only.Does not ship to PO boxes. Orders are typically delivered in 5-10 business days.",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Unsure",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5720"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5721"
+      },
+      "name": "Deal Variations",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large ",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5722"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5723"
+      },
+      "name": "Highlights",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "Sizing Chart: original.jpg",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5724"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5725"
+      },
+      "name": "Announcement",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5726"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5727"
+      },
+      "name": "Short Announcement",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "highlightWords": [],
+          "content": "Pooch Outfitters PKPD-L Kaely...",
+          "lastAction": "",
+          "isReviewed": false,
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              }
+            ]
+          },
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe5728"
+          }
+        }
+      ]
+    },
+    {
+      "_id": {
+        "$oid": "5cc0dd311d8675979afe5729"
+      },
+      "name": "URL",
+      "sectionType": "text",
+      "subsections": [
+        {
+          "escalationInfo": {},
+          "subsectionType": "text",
+          "content": "https://www.groupon.com/deals/gg-mp-pooch-outfitters-pkpd-l-kaelyn-party-dress-pink-large",
+          "flags": {
+            "types": [
+              "FLAG_OFFENSIVE_CONTENT",
+              "FLAG_SERIOUS_COMPLAINT"
+            ],
+            "predicted": [],
+            "marked": [
+              {
+                "reasonType": "Disagree",
+                "reason": "Disagree within this item"
+              },
+              {
+                "reasonType": "Disagree",
+                "reason": "Foreign language"
+              }
+            ]
+          },
+          "isReviewed": false,
+          "lastAction": "",
+          "_id": {
+            "$oid": "5cc0dd311d8675979afe572a"
+          }
+        }
+      ]
+    }
+  ],
+  "enrichmentDate": {
+    "$date": 1556129009998
+  },
+  "checkedOutUser": "",
+  "metadata": {
+    "merchant": "OSP",
+    "announcementText": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large",
+    "variations": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large ",
+    "tags": [
+      "Animals - Dog Supplies - Costumes",
+      "Pet Supplies"
+    ],
+    "breadCrumbs": [
+      "Goods>Pet Supplies>Dog Supplies>Dog Apparel"
+    ],
+    "dealUrl": "https://www.groupon.com/deals/gg-mp-pooch-outfitters-pkpd-l-kaelyn-party-dress-pink-large",
+    "ratingsDistribution": null,
+    "finePrint": "This item is sold through the OSP operated by OSP Holdings, Inc..The merchant is solely responsible to purchasers for the fulfillment, delivery, care, quality, and pricing information of the advertised goods and services.The product is new.Product eligible for free returns within 14 days.Offer is not eligible for promo codes, but is eligible for Groupon Bucks. Shipping and handling charges will be Free. United States (excluding Alaska & Hawaii) Shipments only.Does not ship to PO boxes. Orders are typically delivered in 5-10 business days.",
+    "deliveryId": "362",
+    "dealId": "0353a042-1cd5-4549-81fb-5b9599b8e5c7",
+    "productDetails": """
+Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large
+We have created an exciting line of dog fashion that is fun and modern with the certainties of comfort, luxury and affordability. We assure you the best in style, design, and quality. We hope you have as much fun and excitement with us as we have.Features. Kaelyn Party Dress. Sweet party dress with rhinestones applique, bow on satin waistband, lace trimming, and crystal buckle. Layered lace skirt. Cloth hook and eye closures at neck opening. 50% Cotton, 50% PolyesterSpecifications. Color: Pink. Size: Large
+
+
+
+
+
+Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large
+
+      Sizing Chart: Custom
+      Dimensions: 1.0 inches (H) x 1.0 inches (W) x 1.0 inches (L)
+      Weight: 6.0 pounds
+  
+
+
+      Made in China
+""",
+    "highlights": "Sizing Chart: original.jpg",
+    "shortAnnouncementText": "Pooch Outfitters PKPD-L Kaely...",
+    "averageRating": null,
+    "dealTitle": "Pooch Outfitters PKPD-L Kaelyn Party Dress Pink - Large"
+  }
+}
+  
